@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html{
+    font-size: 100%;
+}
+
+.everything{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+
+main{
+    text-align: center;
+    width: 100%;
+}
+
+#navbar{
+    height: 50px;
+    width: 100%;
+    background-color: #111;
+    opacity: 70%;
+}
+
+#navbar ul{
+    display: table;
+    width: 100%;
+    height: 50px;
+}
+
+
+#navbar li{
+    font-family: 'Vollkorn', cursive, sans-serif;
+    text-decoration-style: none;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.5625rem;
+    font-weight: 2.5rem;
+    width: 300px;
+    height: 100%;
+}
+
+.logo{
+    text-align: left;
+}
+
+.world{
+    text-align: right;
+}
+
+#navbar li a{
+    color: #bbb;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#navbar li a:hover {
+    color: cyan;
+}
+
+
+.title{
+    font-size: 1.875rem;
+    text-align: left;
+    padding: 10px;
+}
+
+.description{
+    font-size: 1rem;
+    text-align: left;
+}
+
+/*-----------------------------------------------------------------rows---------------------------------------------------------------------------------------*/
+
+.row{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0 0 0;
+}
+
+/*----------------------------------------------------------------columns----------------------------------------------------------------------------------------*/
+
+.column{
+    background-color: black;
+    width: 29%;
+    height: 320px;
+    float: left;
+    padding: 5px;
+}
+
+.right{
+    width: 29.5%;
+    float: left;
+    padding: 5px;
+}
+
+.left{
+    width: 69%;
+    float: left;
+    padding: 5px;
+}
+
+.fleft{
+
+    width: 39%;
+    float: left;
+    padding: 5px;
+}
+
+.fright{
+    width: 59.5%;
+    float: left;
+    padding: 5px;
+    height: 320px;
+}
+
+/*-------------------------------------------------------------------content-------------------------------------------------------------------------------------*/
+
+.mainpics{
+    background-color: black;
+}
+
+.mainpics img{
+    width: 19.5%;
+}
+
+.content{
+    width: 960px;
+}
+
+.divider{
+    height: 25px;
+    width: 960px;
+    background-color: grey;
+    text-align: left;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divider p{
+    padding: 0 5px;
+}
+
+
+
+.cinzel{
+    font-family: 'Cinzel Decorative', cursive, sans-serif;
+}
+
+.vollkorn{
+    font-family: 'Vollkorn', serif;
+}
+
+/*---------------------------------------------------------------clearfix------------------------------------------------------------------------------*/
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+/*---------------------------------------Media Query-----------------------------*/
+
+@media  (max-width: 959px){
+
+    .content{
+        width: 100%;
+    }
+
+    .description{
+        font-size: 2rem;
+    }
+
+    .left{
+        width: 100%;
+        height: 100%;
+    }
+
+    .right{
+        width: 100%;
+        height: 100%;
+    }
+
+    .fleft{
+        width: 100%;
+        height: 100%;
+    }
+
+    .fright{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media  (max-width: 640px){
+
+    .left{
+        width: 100%;
+        height: 100%;
+    }
+
+    .right{
+        width: 100%;
+        height: 100%;
+    }
+
+    .fleft{
+        width: 100%;
+        height: 100%;
+    }
+
+    .fright{
+        width: 100%;
+        height: 100%;
+    }
+
+    .column{
+        width: 100%;
+    }
+
+    .mainpics img{
+        width: 19%;
+    }
+    
+}
