@@ -10,6 +10,11 @@ html{
     font-size: 100%;
 }
 
+img{
+    width: 100%;
+    height: 100%;
+}
+
 .everything{
     margin-left: auto;
     margin-right: auto;
@@ -82,6 +87,7 @@ main{
 
 .row{
     width: 100%;
+    overflow: auto;
     margin-left: auto;
     margin-right: auto;
     padding: 10px 0 0 0;
@@ -89,41 +95,49 @@ main{
 
 /*----------------------------------------------------------------columns----------------------------------------------------------------------------------------*/
 
-.column{
-    background-color: black;
-    width: 29%;
-    height: 320px;
-    float: left;
-    padding: 5px;
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
 }
 
-.right{
-    width: 29.5%;
+[class*="col-"] {
     float: left;
-    padding: 5px;
+    border: 1px solid #000;
 }
 
-.left{
-    width: 69%;
-    float: left;
-    padding: 5px;
-}
-
-.fleft{
-
-    width: 39%;
-    float: left;
-    padding: 5px;
-}
-
-.fright{
-    width: 59.5%;
-    float: left;
-    padding: 5px;
-    height: 320px;
-}
-
-/*-------------------------------------------------------------------content-------------------------------------------------------------------------------------*/
+/*-------------------------------------------content-----------------------------------------------*/
 
 .mainpics{
     background-color: black;
@@ -167,9 +181,6 @@ main{
 .cf:after {
     content: " ";
     display: table;
-}
-
-.cf:after {
     clear: both;
 }
 
@@ -185,53 +196,13 @@ main{
         font-size: 2rem;
     }
 
-    .left{
+    [class*="col-"] {
         width: 100%;
-        height: 100%;
     }
-
-    .right{
-        width: 100%;
-        height: 100%;
-    }
-
-    .fleft{
-        width: 100%;
-        height: 100%;
-    }
-
-    .fright{
-        width: 100%;
-        height: 100%;
-    }
-
 }
 
 @media  (max-width: 640px){
 
-    .left{
-        width: 100%;
-        height: 100%;
-    }
-
-    .right{
-        width: 100%;
-        height: 100%;
-    }
-
-    .fleft{
-        width: 100%;
-        height: 100%;
-    }
-
-    .fright{
-        width: 100%;
-        height: 100%;
-    }
-
-    .column{
-        width: 100%;
-    }
 
     .mainpics img{
         width: 19%;
