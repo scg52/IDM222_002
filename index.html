@@ -9,19 +9,25 @@
 <body>
 
 <div class="everything">
-  <header>                                                                      <!--Nav bar-->
-    <div id="navbar" class="cinzel">
-      <nav>
-        <ul>
-          <li class="logo"><a href="index.html">Relic</a></li>
-          <li class="world"><a href="worlds/coriath.html">Coriath</a></li>
-          <li class="world"><a href="worlds/grimoire.html">Grimoire</a></li>
-          <li class="world"><a href="worlds/commodore.html">Commodore</a></li>
-          <li class="world"><a href="worlds/cutlass.html">Cutlass</a></li>
-          <li class="world"><a href="worlds/ragnarok.html">Ragnarok</a></li>
-          <!--<li><a href="worlds/feia.html">Feia</a></li>
-          <li><a href="worlds/kiina.html">Ki'ina</a></li> -->
-        </ul>
+  <header>                          
+      <nav class="nav cinzel">
+      <div class="logo"><a href="index.html"><p>Relic</p></a></div>
+      <input type="checkbox" name="burger" class="burger">
+      <label for="burger" class="burger-toggle"><span>Menu</span>&#9776;</label>
+      <ul class="main-menu">
+        <li class="menu-item right"><a href="worlds/index.html">Worlds</a>
+            <ul class="sub-menu">
+            <li class="menu-item world"><a href="worlds/coriath.html">Coriath</a></li>
+            <li class="menu-item world"><a href="worlds/grimoire.html">Grimoire</a></li>
+            <li class="menu-item world"><a href="worlds/commodore.html">Commodore</a></li>
+            <li class="menu-item world"><a href="worlds/cutlass.html">Cutlass</a></li>
+            <li class="menu-item world"><a href="worlds/ragnarok.html">Ragnarok</a></li>
+            <!--<li><a href="worlds/feia.html">Feia</a></li>
+            <li><a href="worlds/kiina.html">Ki'ina</a></li> -->
+          </ul>
+        </li>
+        <li class="menu-item right"><a href="howtoplay.html">Gameplay</a></li>
+      </ul>
       </nav>
     </div>
   </header>
@@ -45,13 +51,13 @@
         <br>
       </div> <!--description-->
       <div class="row">
-        <div class="col-3">
+        <div class="col">
           <a href="worlds/index.html">
             <img src="https://dummyimage.com/300x300/fff/000.png&text=DiscoverWorlds">
           </a>
         </div>
-        <div class="col-3"></div>  <!--div Keeping form-->
-        <div class="col-3">
+        <div class="col"></div>  <!--div Keeping form-->
+        <div class="col">
           <a href="howtoplay.html">
             <img src="https://dummyimage.com/300x300/fff/000.png&text=HowToPlay">
           </a>

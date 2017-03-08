@@ -4,36 +4,30 @@
   <title>How To Play</title>
   <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Vollkorn" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="playerinfocss.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
  <div class="everything">
- <header>                                                                      <!--Nav bar-->
-    <div id="navbar" class="cinzel">
-      <nav>
-        <ul>
-          <li><a href="index.html">Relic</a></li>
-          <li><a href="worlds/coriath.html">Coriath</a></li>
-          <li><a href="worlds/grimoire.html">Grimoire</a></li>
-          <li><a href="worlds/commodore.html">Commodore</a></li>
-          <li><a href="worlds/cutlass.html">Cutlass</a></li>
-          <li><a href="worlds/ragnarok.html">Ragnarok</a></li>
-          <!--<li><a href="worlds/feia.html">Feia</a></li>
-          <li><a href="worlds/kiina.html">Ki'ina</a></li>                    worlds to add later-->
-
-          <!--<li>
-            <div class="dropdown">
-              <button onclick="myFunction()" class="dropbutton">Worlds</button>          dropdown menu
-              <div class="dropdown-links">
-                <a href="coriath.html">Coriath</a>
-                <a href="grimoire.html">Grimoire</a>
-                <a href="commodore.html">Commodore</a>
-                <a href="cutlass.html">Cutlass</a>
-                <a href="ragnarok.html">Ragnarok</a>
-              </div> <!~~ dropdown-links~~>
-            </div>  <!~~ dropdown~~>
-          </li> -->
-        </ul>
+ <header>                          
+      <nav class="nav cinzel">
+      <div class="logo"><a href="index.html"><p>Relic</p></a></div>
+      <input type="checkbox" name="burger" class="burger">
+      <label for="burger" class="burger-toggle"><span>Menu</span>&#9776;</label>
+      <ul class="main-menu">
+        <li class="menu-item right"><a href="worlds/index.html">Worlds</a>
+            <ul class="sub-menu">
+            <li class="menu-item world"><a href="worlds/coriath.html">Coriath</a></li>
+            <li class="menu-item world"><a href="worlds/grimoire.html">Grimoire</a></li>
+            <li class="menu-item world"><a href="worlds/commodore.html">Commodore</a></li>
+            <li class="menu-item world"><a href="worlds/cutlass.html">Cutlass</a></li>
+            <li class="menu-item world"><a href="worlds/ragnarok.html">Ragnarok</a></li>
+            <!--<li><a href="worlds/feia.html">Feia</a></li>
+            <li><a href="worlds/kiina.html">Ki'ina</a></li> -->
+          </ul>
+        </li>
+        <li class="menu-item right"><a href="howtoplay.html">Gameplay</a></li>
+      </ul>
       </nav>
     </div>
   </header>
@@ -45,12 +39,7 @@
         <h1>How To Play</h1>
       </div>
       <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+        <p>Here you can learn how to play Relic.</p> 
         <br> 
         <br> 
       </div>
