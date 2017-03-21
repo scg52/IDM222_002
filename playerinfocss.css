@@ -4,6 +4,7 @@
     padding: 0px;
     margin-left: auto;
     margin-right: auto;
+    color: #eee;
 }
 
 html{
@@ -13,12 +14,24 @@ html{
 img{
     width: 100%;
     height: 100%;
+    border-radius: .3rem;
 }
 
 .everything{
     margin: 0px auto;
     text-align: center;
     width: 100%;
+}
+
+body{
+    background-image: url('images/aether.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
 }
 
 main{
@@ -39,7 +52,11 @@ a:hover {
 .nav{
     height: 50px;
     width: 100%;
-    background-color: black;
+    background: rgba(0,0,0,0.6);
+    background: -webkit-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2));
+    background: -o-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2));
+    background: -moz-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2));
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2));
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,7 +81,16 @@ a:hover {
 
 .main-menu, .sub-menu{
     list-style: none;
-    background-color: #111;
+}
+
+.sub-menu{
+    padding-top: 1rem;
+    margin-top: -1rem;
+    background: rgba(0,0,0,0.6);
+    background: -webkit-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0));
+    background: -o-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0));
+    background: -moz-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0));
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0));
 }
 
 .menu-item{
@@ -79,6 +105,7 @@ a:hover {
     height: 0%;
     display: none;
     margin: 0px;
+    z-index: 2;
 }
 
 .burger:checked ~ .main-menu {
@@ -89,6 +116,13 @@ a:hover {
 .logo{
     margin: 0px;
     padding-left: 1em;
+    height: 100%;
+}
+
+.logo img{
+    margin-top: -2.5rem;
+    height: 8rem;
+    width: 8rem;
 }
 
 .world{
@@ -138,30 +172,30 @@ a:hover {
 
 .row{
     width: 100%;
-    overflow: auto;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    padding: .5em;
 }
 
 /*----------------------------------------------------------------columns----------------------------------------------------------------------------------------*/
 
 .col{
-    border-color: black;
-    border-width: 2px;
     width: 33.33%;
+    height: 100%;
 }
 
 .pic{
     width: 25%;
+    padding: 1em 0;
+    background-color: lightgray;
 }
 
 .text{
-    width: 50%;
-    padding: 10px;
+    width: 50%;   
+    padding: 1em;
 }
 
 .textwide{
@@ -172,14 +206,20 @@ a:hover {
 /*-------------------------------------------content-----------------------------------------------*/
 
 .title{
-    font-size: 1.875rem;
-    text-align: left;
-    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.title img{
+    margin-top: -9rem;
+    width: 70%;
+    height: 70%;
 }
 
 .description{
     font-size: 1rem;
     text-align: left;
+    padding: .5rem;
 }
 
 .mainpics{
@@ -191,7 +231,12 @@ a:hover {
 }
 
 .content{
-    width: 960px;
+    width: 60rem;
+    background-color: rgba(55,55,55,0.8);
+}
+
+.content-home{
+    width: 60rem;
 }
 
 .divider{
@@ -208,7 +253,42 @@ a:hover {
     padding: 0 5px;
 }
 
+.button-holder{
+    width: 50%;
+}
 
+.button{
+    font-size: 2.25rem;
+    padding: 1rem;
+    border-radius: .25rem;
+    width: 90%;
+    background-color: rgba(150,150,150,0.6);
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgba(150,150,150,0.6);
+}
+
+figure{
+    position: relative;
+}
+
+figure:hover figcaption{
+    opacity: 1;
+} 
+
+figcaption{
+    position: absolute;
+    opacity: 0;
+    transition: .25s ease-in-out;
+    color: white;
+    font-size: 2rem;
+    margin-top: -5rem;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    text-align: center;
+}
 
 .cinzel{
     font-family: 'Cinzel Decorative', cursive, sans-serif;
@@ -222,18 +302,50 @@ a:hover {
     text-align: center;
 }
 
+.footer{
+    background-color: black;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+}
+
 /*---------------------------------------Media Query-----------------------------*/
 
 @media  (max-width: 959px){
+    *{
+        font-size: 1.25rem;
+    }
 
     .content{
         width: 100%;
     }
 
+    .content-home{
+        width: 100%;
+    }
+
+    .title img{
+        width: 100%;
+        margin: 0;
+    }
+
+    figcaption{
+        opacity: 1;
+    }
+
+    .button-holder{
+        width: 100%;
+    }
     
 }
 
 @media  (max-width: 640px){
+
+    .main-menu, .sub-menu{
+        background-color: black;
+    }
 
     .row{
         width: 100%;
@@ -254,20 +366,22 @@ a:hover {
 
     .pic{
         width: 100%;
+        height: 30rem;
     }
 
     .text{
         width: 100%;
-        padding: 10px;
+        padding: 1rem;
     }
 
     .textwide{
         width: 100%;
-        padding: 10px;
+        padding: 1rem;
     }
 
     .mainpics img{
         width: 19%;
     }
+
     
 }
